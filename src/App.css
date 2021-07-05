@@ -2,6 +2,8 @@
 
 :root {
   --primary-white: #fff;
+  --primary-red: #94192e;
+  --primary-dark: rgba(255, 255, 255, 0);
 }
 
 body {
@@ -9,7 +11,7 @@ body {
 }
 
 .logo {
-  width: 8rem;
+  width: 6rem;
 }
 
 /********************** MENU LINKS **********/
@@ -27,4 +29,20 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+
+.navbar-nav li a.active,
+.navbar-nav li a.active:focus {
+  border-top: 0.1875rem solid var(--primary-red);
+}
+
+.navbar-nav li a:hover {
+  border-top: 0.1875rem solid var(--primary-red);
 }
