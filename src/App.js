@@ -1,6 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/index";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Puppies from "./pages/Puppies";
