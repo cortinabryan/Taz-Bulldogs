@@ -10,7 +10,7 @@ import {
   NavMenu,
 } from "./NavbarElements";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
@@ -18,7 +18,7 @@ const Navbar = () => {
           <NavLogo to="/">
             <img src="/images/logo.png" alt="" className="logo" />
           </NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
@@ -30,6 +30,9 @@ const Navbar = () => {
             </NavItem>
             <NavItem>
               <NavLinks to="about">Available Puppies</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="about">Contact Us</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

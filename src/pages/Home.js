@@ -1,14 +1,21 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "bootstrap";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import Button from "bootstrap";
 import "../App.css";
 import HeroSection from "../components/HeroSection";
+import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="text-center bg-light">
-      {/* <h1 className="mb-3">Taz Bulldogs</h1>
-      <h4 className="mb-3">Subheading</h4> */}
+    <div>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
       <HeroSection />
     </div>
   );
