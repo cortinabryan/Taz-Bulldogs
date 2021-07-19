@@ -13,6 +13,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  font-family: "Varela Round", sans-serif;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -87,7 +88,7 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
   /* color: red !important; */
 
   &:active {

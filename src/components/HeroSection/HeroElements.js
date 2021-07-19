@@ -64,7 +64,9 @@ export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 48px;
   text-align: center;
-  font-family: "Pacifico", cursive;
+  font-family: poppins;
+  /* font-family: "Pacifico", cursive; */
+  font-family: "Goblin One", cursive;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
