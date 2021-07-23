@@ -46,6 +46,10 @@ export const VideoBg = styled.video`
   -o-object-fit: cover;
   object-fit: cover;
   background: #232a34;
+  /* background: #232a34 no-repeat center; */
+  /* position: fixed; */
+  /* top: 0; */
+  /* background-attachment: fixed; */
   z-index: 1;
 `;
 

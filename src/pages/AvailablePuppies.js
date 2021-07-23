@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 
 const AvailablePuppies = () => {
   return (
-    <div>
+    <div id="available-puppies">
       <Navbar />
       <p>yooo</p>
       <p>yooo</p>

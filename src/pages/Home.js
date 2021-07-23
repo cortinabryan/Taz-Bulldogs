@@ -10,6 +10,7 @@ import {
 } from "../components/InfoSection/Data";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -26,7 +27,8 @@ const Home = () => {
       <InfoSection {...homeObjOne} />
       <Puppies />
       <InfoSection {...homeObjTwo} />
-      <InfoSection {...homeObjThree} />
+      {/* <InfoSection {...homeObjThree} /> */}
+      <Contact />
       <Footer />
     </>
   );
