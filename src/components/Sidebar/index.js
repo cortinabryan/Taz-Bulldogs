@@ -10,27 +10,29 @@ import {
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <Icon onClick={toggle}>
-        <CloseIcon />
-      </Icon>
-      <SidebarWrapper>
-        <SidebarMenu>
-          <SidebarLink to="Home" onClick={toggle}>
-            Home
-          </SidebarLink>
-          <SidebarLink to="About" onClick={toggle}>
-            About
-          </SidebarLink>
-          <SidebarLink to="Puppies" onClick={toggle}>
-            Available Puppies
-          </SidebarLink>
-          <SidebarLink to="Contact" onClick={toggle}>
-            Contact Us
-          </SidebarLink>
-        </SidebarMenu>
-      </SidebarWrapper>
-    </SidebarContainer>
+    <>
+      <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <Icon onClick={toggle}>
+          <CloseIcon />
+        </Icon>
+        <SidebarWrapper>
+          <SidebarMenu>
+            <SidebarLink to="Home" onClick={toggle}>
+              Home
+            </SidebarLink>
+            <SidebarLink to="About" onClick={toggle}>
+              About
+            </SidebarLink>
+            <SidebarLink to="Puppies" onClick={toggle}>
+              Available Puppies
+            </SidebarLink>
+            <SidebarLink to="Contact" onClick={toggle}>
+              Contact Us
+            </SidebarLink>
+          </SidebarMenu>
+        </SidebarWrapper>
+      </SidebarContainer>
+    </>
   );
 };
 
