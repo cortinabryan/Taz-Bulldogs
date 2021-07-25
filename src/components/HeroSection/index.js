@@ -27,6 +27,7 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>Taz's Bulldogs</HeroH1>
+        <HeroH1>Website is Under Construction</HeroH1>
         <HeroP>
           Located in Las Vegas, Nevada we are a Hobby breeder specializing in
           rare colors of both miniature and standard sized English & Frenchie
