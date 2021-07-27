@@ -15,7 +15,7 @@ export const ContactContainer = styled.div`
 export const ContactWrapper = styled.div`
   z-index: 1;
   height: 1000px;
-  width: 100%;
+  /* width: 100%; */
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
@@ -46,6 +46,13 @@ export const ContactInput = styled.input`
   margin-top: 1rem;
   background-color: rgb(8, 10, 22);
   border-radius: 5px;
+  @media screen and (max-width: 1000px) {
+    max-width: 20rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 15rem;
+  } ;
 `;
 
 export const ContactMsg = styled.div`

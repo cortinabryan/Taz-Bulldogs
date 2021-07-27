@@ -19,6 +19,9 @@ body {
   width: 6rem;
 }
 
+.kennel {
+  width: 30rem;
+}
 /********************** MENU LINKS **********/
 
 /* nav a.nav-link {

@@ -5,10 +5,12 @@ import {
   FooterContainer,
   FooterWrapper,
   FooterLinksContainer,
-  FooterLinksWrapper,
+  FooterImageWrapper,
   FooterLinkItems,
   FooterLinkTitle,
   FooterLink,
+  FooterP,
+  FooterImage,
   SocialMedia,
   SocialMediaWrapper,
   SocialLogo,
@@ -26,24 +28,24 @@ const Footer = () => {
       <FooterContainer>
         <FooterWrapper>
           <FooterLinksContainer>
-            <FooterLinksWrapper>
-              <FooterLinkItems>
-                <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to="/signin">About Us</FooterLink>
-                <FooterLink to="/signin">FAQs</FooterLink>
-                <FooterLink to="/signin">Available Puppies</FooterLink>
-                <FooterLink to="/signin">Contact Us</FooterLink>
-                <FooterLink to="/signin">Terms of Service</FooterLink>
-              </FooterLinkItems>
-              <FooterLinkItems>
-                <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to="/signin">About Us</FooterLink>
-                <FooterLink to="/signin">FAQs</FooterLink>
-                <FooterLink to="/signin">Available Puppies</FooterLink>
-                <FooterLink to="/signin">Contact Us</FooterLink>
-                <FooterLink to="/signin">Terms of Service</FooterLink>
-              </FooterLinkItems>
-            </FooterLinksWrapper>
+            <FooterImageWrapper>
+              <FooterImage>
+                <img
+                  src="/images/american-kennel4.png"
+                  alt=""
+                  className="kennel"
+                />
+                <FooterP>Registration Papers Included</FooterP>
+              </FooterImage>
+              <FooterImage>
+                <img
+                  src="/images/american-kennel5.png"
+                  alt=""
+                  className="kennel"
+                />
+                <FooterP>30 Day Pet Insurance Coverage</FooterP>
+              </FooterImage>
+            </FooterImageWrapper>
           </FooterLinksContainer>
           <SocialMedia>
             <SocialMediaWrapper>
