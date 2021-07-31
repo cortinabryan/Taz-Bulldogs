@@ -34,13 +34,10 @@ export const ContactWrapper = styled.div`
   margin-left: auto;
   padding: 0 24px;
   justify-content: center; */
-  margin-right: auto;
-  margin-left: auto;
+  /* margin-right: auto;
+  margin-left: auto; */
   box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 
-  * {
-    padding: 1em;
-  }
   @media screen and (min-width: 700px) {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -90,6 +87,7 @@ export const ContactH1 = styled.h1`
   color: #fff;
   margin-bottom: 64px;
   text-align: center;
+  padding-top: 40px;
 `;
 
 export const ContactP = styled.p`
@@ -110,6 +108,7 @@ export const ContactRow = styled.div`
 export const ContactLabel = styled.label`
   color: #fff;
   display: block;
+  padding-bottom: 0.5em;
 `;
 
 export const ContactInput = styled.input`
@@ -122,6 +121,7 @@ export const ContactInput = styled.input`
   /* margin-top: 1rem; */
   width: 100%;
   padding: 1em;
+  margin-bottom: 2em;
   background-color: rgb(8, 10, 22);
   border-radius: 5px;
   /* @media screen and (max-width: 1000px) {
@@ -154,9 +154,18 @@ export const ContactForm = styled.form`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  column-gap: 60px;
+  padding: 2em;
 
   .full {
     grid-column: 1 / 3;
+  }
+
+  @media screen and (max-width: 700px) {
+    padding: 1em;
+    column-gap: 20px;
+  }
+  @media screen and (max-width: 375px) {
   }
 `;
 
@@ -197,6 +206,7 @@ export const ContactText = styled.textarea`
   /* font-size: 20px; */
   width: 100%;
   padding: 1em;
+  min-height: 300px;
   background-color: rgb(8, 10, 22);
   border-radius: 5px;
 
