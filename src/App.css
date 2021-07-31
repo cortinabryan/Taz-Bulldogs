@@ -9,6 +9,10 @@
   --primary-dark: rgba(255, 255, 255, 0);
 }
 
+* {
+  /* box-sizing: border-box; */
+}
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -21,7 +25,37 @@ body {
 
 .kennel {
   width: 30rem;
+
+  /* @media screen and (max-width: 1000px) {
+    max-width: 52rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 38rem;
+  }
+  @media screen and (max-width: 375px) {
+    max-width: 20rem;
+  } */
 }
+
+@media screen and (max-width: 1000px) {
+  .kennel {
+    max-width: 52rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .kennel {
+    max-width: 25rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .kennel {
+    max-width: 20rem;
+  }
+}
+
 /********************** MENU LINKS **********/
 
 /* nav a.nav-link {

@@ -49,6 +49,17 @@ export const FooterImage = styled(Link)`
   align-items: center;
   margin-bottom: 16px;
   font-weight: bold;
+
+  @media screen and (max-width: 1000px) {
+    max-width: 52rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 38rem;
+  }
+  @media screen and (max-width: 375px) {
+    max-width: 20rem;
+  } ;
 `;
 
 export const FooterP = styled.p`

@@ -30,9 +30,7 @@ const HeroSection = () => {
         <HeroP>
           Located in Las Vegas, Nevada we are a Hobby breeder specializing in
           rare colors of both miniature and standard sized English & Frenchie
-          French Bulldog puppies. If you are looking for lots of wrinkles and a
-          happy, healthy puppy that is bred for quality not quantity, you have
-          come to the right place!
+          French Bulldog puppies
         </HeroP>
         <HeroBtnWrapper>
           <Button
