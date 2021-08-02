@@ -27,10 +27,11 @@ export const FooterLinksContainer = styled.div`
 export const FooterImageWrapper = styled.div`
   display: flex;
   /* background: red; */
-  justify-content: space-between;
   align-items: center;
   max-width: 1100px;
   margin: 40px auto 0 auto;
+  /* justify-content: space-between; */
+  margin: 20px;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -39,6 +40,7 @@ export const FooterImageWrapper = styled.div`
 
 export const FooterImage = styled(Link)`
   /* background: blue; */
+  background-size: contain;
   color: #fff;
   justify-self: start;
   /* cursor: pointer; */
@@ -49,6 +51,9 @@ export const FooterImage = styled(Link)`
   align-items: center;
   margin-bottom: 16px;
   font-weight: bold;
+  height: 100%;
+  background-repeat: no-repeat;
+  flex: 1;
 
   @media screen and (max-width: 1000px) {
     max-width: 52rem;
@@ -71,6 +76,10 @@ export const FooterP = styled.p`
   text-transform: uppercase;
   margin-top: 40px;
   margin-bottom: 16px;
+
+  &:hover {
+    color: #d3001f !important;
+  }
 `;
 
 // export const FooterLinkItems = styled.div`

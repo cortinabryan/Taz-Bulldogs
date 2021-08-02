@@ -12,6 +12,8 @@ import {
   NavMenu,
 } from "./NavbarElements";
 
+import logo from "../../images/logo.png";
+
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
@@ -36,7 +38,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              <img src="/images/logo.png" alt="" className="logo" />
+              <img src={logo} alt="" className="logo" />
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />

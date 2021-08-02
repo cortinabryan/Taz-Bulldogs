@@ -17,6 +17,9 @@ import {
   WebsiteRights,
   SocialIconLink,
 } from "./FooterElement";
+import logo from "../../images/logo.png";
+import img1 from "../../images/american-kennel4.png";
+import img2 from "../../images/american-kennel6.png";
 
 const Footer = () => {
   const toggleHome = () => {
@@ -29,20 +32,12 @@ const Footer = () => {
         <FooterWrapper>
           <FooterLinksContainer>
             <FooterImageWrapper>
-              <FooterImage>
-                <img
-                  src="/images/american-kennel4.png"
-                  alt=""
-                  className="kennel"
-                />
+              <FooterImage style={{ backgroundImage: `url(${img1})` }}>
+                <img src={img1} alt="" className="kennel" />
                 <FooterP>Registration Papers Included</FooterP>
               </FooterImage>
-              <FooterImage>
-                <img
-                  src="/images/american-kennel5.png"
-                  alt=""
-                  className="kennel"
-                />
+              <FooterImage style={{ backgroundImage: `url(${img2})` }}>
+                <img src={img2} alt="" className="kennel" />
                 <FooterP>30 Day Pet Insurance Coverage</FooterP>
               </FooterImage>
             </FooterImageWrapper>
@@ -50,7 +45,7 @@ const Footer = () => {
           <SocialMedia>
             <SocialMediaWrapper>
               <SocialLogo to="/" onClick={toggleHome}>
-                <img src="/images/logo.png" alt="" className="logo" />
+                <img src={logo} alt="" className="logo" />
               </SocialLogo>
               <WebsiteRights>
                 Taz's Bulldog {new Date().getFullYear()} All rights reserved.

@@ -19,6 +19,13 @@ body {
   padding: 0;
 }
 
+/* ul li a {
+  color: #fff;
+}
+ul li a:hover {
+  color: green;
+} */
+
 .logo {
   width: 6rem;
 }
