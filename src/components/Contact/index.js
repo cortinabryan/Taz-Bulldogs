@@ -37,10 +37,10 @@ const Contact = () => {
         <ContactWrapper>
           {/* <ContactInfoWrapper> */}
           <ContactInfo>
-            <ContactH3>Contact Us</ContactH3>
+            <ContactH3>Taz Bulldogs</ContactH3>
             <ContactList>
               <ContactListItem>
-                <ContactI className="fa fa-phone"></ContactI>(702)555-5555
+                <ContactI className="fa fa-phone"></ContactI>(702) 555-5555
               </ContactListItem>
               <ContactListItem>taz-bulldogs@gmail.com</ContactListItem>
             </ContactList>

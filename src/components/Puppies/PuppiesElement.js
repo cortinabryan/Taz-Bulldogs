@@ -6,7 +6,26 @@ export const PuppiesContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #010606;
+  background: rgb(181, 189, 200); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(181, 189, 200, 1) 0%,
+    rgba(130, 140, 149, 1) 36%,
+    rgba(40, 52, 59, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(181, 189, 200, 1) 0%,
+    rgba(130, 140, 149, 1) 36%,
+    rgba(40, 52, 59, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(181, 189, 200, 1) 0%,
+    rgba(130, 140, 149, 1) 36%,
+    rgba(40, 52, 59, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
 
   @media screen and (max-width: 1000px) {
     height: 1800px;
@@ -29,6 +48,7 @@ export const PuppiesWrapper = styled.div`
   grid-gap: 16px;
   padding: 0 50px;
   /* padding: 0 25px; */
+  /* transition: all 0.2s ease-in-out; */
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
   }
@@ -40,7 +60,6 @@ export const PuppiesWrapper = styled.div`
 `;
 
 export const PuppiesCard = styled.div`
-  background: rgb(24, 26, 27);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -50,13 +69,15 @@ export const PuppiesCard = styled.div`
   /* max-height: 340px; */
   width: 250px;
   padding: 30px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 
   &:hover {
     transform: scale(1.02);
     transition: all 0.2s ease-ease-in-out;
     /* cursor: pointer; */
+    /* background: rgb(24, 26, 27); */
+    background: linear-gradient(to bottom right, #536976, #292e49);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   }
 `;
 

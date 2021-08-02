@@ -64,7 +64,10 @@ export const ContactI = styled.i`
 
 export const ContactInfo = styled.div`
   color: #fff;
-  background: #7a0300;
+  /* background: rgb(98, 2, 0); */
+  padding: 20px;
+  background: #bf0303; /* Old browsers */
+  background: linear-gradient(to bottom right, #870000, #190a05);
 `;
 
 export const ContactList = styled.ul`
@@ -119,7 +122,7 @@ export const ContactInput = styled.input`
   /* width: 30rem; */
   /* font-size: 20px; */
   /* margin-top: 1rem; */
-  width: 100%;
+  width: 95%;
   padding: 1em;
   margin-bottom: 2em;
   background-color: rgb(8, 10, 22);
@@ -183,13 +186,37 @@ export const ContactForm = styled.form`
 export const ContactButton = styled.button`
   width: 100%;
   padding: 1em;
-  background: #c9e6ff;
+  background: linear-gradient(to bottom right, #870000, #190a05);
+  color: #f9f9f9;
+  /* background: #c9e6ff; */
+
   border: 0;
   text-transform: uppercase;
 
   :hover,
   :hover {
-    background: #92bde7;
+    /* background: #92bde7; */
+    background: #bf0303; /* Old browsers */
+    background: -moz-linear-gradient(
+      top,
+      #bf0303 0%,
+      #ae0202 45%,
+      #9a0000 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      #bf0303 0%,
+      #ae0202 45%,
+      #9a0000 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      #bf0303 0%,
+      #ae0202 45%,
+      #9a0000 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf0303', endColorstr='#9a0000',GradientType=0 ); /* IE6-9 */
+
     color: #fff;
     transition: background-color 2s ease-out;
   }
@@ -204,11 +231,12 @@ export const ContactText = styled.textarea`
   /* width: 61.5rem; */
   /* min-height: 300px; */
   /* font-size: 20px; */
-  width: 100%;
+  width: 98%;
   padding: 1em;
   min-height: 300px;
   background-color: rgb(8, 10, 22);
   border-radius: 5px;
+  color: #fff;
 
   /* @media screen and (max-width: 1000px) {
     max-width: 52rem;
