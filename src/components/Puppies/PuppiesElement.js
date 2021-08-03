@@ -46,7 +46,7 @@ export const PuppiesWrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 16px;
-  padding: 0 50px;
+  /* padding: 0 50px; */
   /* padding: 0 25px; */
   /* transition: all 0.2s ease-in-out; */
   @media screen and (max-width: 1000px) {
