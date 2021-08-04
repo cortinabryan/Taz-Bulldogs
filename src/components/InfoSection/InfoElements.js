@@ -52,15 +52,20 @@ export const Column1 = styled.div`
   /* padding: 0 15px; */
   grid-area: col1;
   @media screen and (max-width: 375px) {
-    margin: 20px 20px 0 20px;
+    margin: 40px 40px 0 40px;
     /* margin: 20px; */
   }
 `;
 
 export const Column2 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
+  /* margin-bottom: 15px; */
+  /* padding: 0 15px; */
   grid-area: col2;
+
+  @media screen and (max-width: 375px) {
+    margin: 40px 0 40px 40px;
+    /* margin: 20px; */
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -119,6 +124,6 @@ export const Img = styled.img`
   /* margin: 0 0 10px 0; */
   @media screen and (max-width: 375px) {
     /* background: red; */
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
 `;
