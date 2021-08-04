@@ -52,7 +52,8 @@ export const Column1 = styled.div`
   /* padding: 0 15px; */
   grid-area: col1;
   @media screen and (max-width: 375px) {
-    margin: 20px;
+    margin: 20px 20px 0 20px;
+    /* margin: 20px; */
   }
 `;
 
@@ -94,7 +95,7 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
   max-width: 440px;
-  margin-bottom: 35px;
+  /* margin-bottom: 35px; */
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -109,9 +110,15 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
+  /* margin-bottom: 40px; */
 `;
 
 export const Img = styled.img`
   width: 100%;
+  /* background: red; */
   /* margin: 0 0 10px 0; */
+  @media screen and (max-width: 375px) {
+    /* background: red; */
+    margin-bottom: 100px;
+  }
 `;
