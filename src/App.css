@@ -30,21 +30,12 @@ ul li a:hover {
   width: 6rem;
 }
 
-.kennel {
-  width: 30rem;
-
-  /* @media screen and (max-width: 1000px) {
-    max-width: 52rem;
-  }
-
-  @media screen and (max-width: 768px) {
-    max-width: 38rem;
-  }
-  @media screen and (max-width: 375px) {
-    max-width: 20rem;
-  } */
+.kennel1 {
 }
 
+.kennel2 {
+  height: 345px;
+}
 @media screen and (max-width: 1000px) {
   .kennel {
     max-width: 52rem;

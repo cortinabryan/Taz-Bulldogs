@@ -35,9 +35,8 @@ const Contact = () => {
     <div>
       <ContactContainer>
         <ContactWrapper>
-          {/* <ContactInfoWrapper> */}
           <ContactInfo>
-            <ContactH3>Taz Bulldogs</ContactH3>
+            <ContactH1>Taz Bulldogs</ContactH1>
             <ContactList>
               <ContactListItem>
                 <ContactI className="fa fa-phone"></ContactI>(702) 555-5555
@@ -45,9 +44,8 @@ const Contact = () => {
               <ContactListItem>taz-bulldogs@gmail.com</ContactListItem>
             </ContactList>
           </ContactInfo>
-          {/* </ContactInfoWrapper> */}
           <ContactBottomWrapper id="contact">
-            <ContactH1>Contact Us</ContactH1>
+            <ContactH3>Contact Us</ContactH3>
             <ContactForm>
               <ContactP>
                 <ContactLabel>Name</ContactLabel>
@@ -66,28 +64,15 @@ const Contact = () => {
                 <ContactLabel>Subject</ContactLabel>
                 <ContactInput placeholder="Subject"></ContactInput>
               </ContactP>
-              {/* <ContactTextWrapper> */}
+
               <ContactP className="full">
                 <ContactLabel>Message</ContactLabel>
                 <ContactText placeholder="Message" />
               </ContactP>
 
-              {/* </ContactTextWrapper> */}
-              {/* <ContactBtnWrapper> */}
-              {/* <Button
-                  to="/available-puppies"
-                  onMouseEnter={onHover}
-                  onMouseLeave={onHover}
-                  primary="true"
-                  dark="true"
-                >
-                  Send Message
-                </Button> */}
               <ContactP className="full">
                 <ContactButton>Send Message</ContactButton>
               </ContactP>
-
-              {/* </ContactBtnWrapper> */}
             </ContactForm>
           </ContactBottomWrapper>
         </ContactWrapper>
