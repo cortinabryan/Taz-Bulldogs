@@ -54,6 +54,10 @@ ul li a:hover {
   }
 }
 
+.button-link {
+  text-decoration: none;
+}
+
 /********************** MENU LINKS **********/
 
 /* nav a.nav-link {

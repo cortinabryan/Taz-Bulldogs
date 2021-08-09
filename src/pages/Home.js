@@ -27,7 +27,6 @@ const Home = () => {
       <InfoSection {...homeObjOne} />
       <Puppies />
       <InfoSection {...homeObjTwo} />
-      {/* <InfoSection {...homeObjThree} /> */}
       <Contact />
       <Footer />
     </>

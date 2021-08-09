@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import Icon1 from "../../images/puppy-3.jpg";
-import Icon2 from "../../images/puppy-19.jpg";
-import Icon3 from "../../images/puppy-8.jpg";
-import Icon4 from "../../images/puppy-13.jpg";
-import Icon5 from "../../images/puppy-14.jpg";
-import Icon6 from "../../images/puppy-6.jpg";
+import { useHistory, Link } from "react-router-dom";
+import Icon1 from "../../images/nena.jpg";
+import Icon2 from "../../images/molly.jpg";
+import Icon3 from "../../images/turbo.jpg";
+import Icon4 from "../../images/thunder.jpg";
+import Icon5 from "../../images/chapo.jpg";
+import Icon6 from "../../images/duke.jpg";
 import { Button } from "../ButtonElements";
 import {
   PuppiesContainer,
@@ -24,6 +25,12 @@ const Puppies = () => {
     setHover(!hover);
   };
 
+  let history = useHistory();
+
+  function handleClick() {
+    history.push("/available-puppies");
+  }
+
   return (
     <>
       <PuppiesContainer id="puppies">
@@ -31,51 +38,54 @@ const Puppies = () => {
         <PuppiesWrapper>
           <PuppiesCard>
             <PuppiesIcon src={Icon1}></PuppiesIcon>
-            <PuppiesH2> Dendi</PuppiesH2>
-            <PuppiesP>Gender: Male</PuppiesP>
+            <PuppiesH2> Nena</PuppiesH2>
+            <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 8 weeks</PuppiesP>
           </PuppiesCard>
           <PuppiesCard>
             <PuppiesIcon src={Icon2}></PuppiesIcon>
-            <PuppiesH2> Arteezy</PuppiesH2>
+            <PuppiesH2> Molly</PuppiesH2>
             <PuppiesP>Gender: Male</PuppiesP>
             <PuppiesP>Age: 10 weeks</PuppiesP>
           </PuppiesCard>
           <PuppiesCard>
             <PuppiesIcon src={Icon3}></PuppiesIcon>
-            <PuppiesH2> Quinn</PuppiesH2>
+            <PuppiesH2> Turbo</PuppiesH2>
             <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 7 weeks</PuppiesP>
           </PuppiesCard>
           <PuppiesCard>
             <PuppiesIcon src={Icon4}></PuppiesIcon>
-            <PuppiesH2> Topson</PuppiesH2>
+            <PuppiesH2> Thunder</PuppiesH2>
             <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 5 weeks</PuppiesP>
           </PuppiesCard>
           <PuppiesCard>
             <PuppiesIcon src={Icon5}></PuppiesIcon>
-            <PuppiesH2> Sumail</PuppiesH2>
+            <PuppiesH2> Chapo</PuppiesH2>
             <PuppiesP>Gender: Male</PuppiesP>
             <PuppiesP>Age: 6 weeks</PuppiesP>
           </PuppiesCard>
           <PuppiesCard>
             <PuppiesIcon src={Icon6}></PuppiesIcon>
-            <PuppiesH2> Ceb</PuppiesH2>
+            <PuppiesH2> Duke</PuppiesH2>
             <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 7 weeks</PuppiesP>
           </PuppiesCard>
         </PuppiesWrapper>
         <PuppiesBtnWrapper>
-          <Button
-            to="/available-puppies"
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            primary="true"
-            dark="true"
-          >
-            More Available Puppies
-          </Button>
+          <Link to="available-puppies" className="button-link">
+            <Button
+              to="/"
+              onMouseEnter={onHover}
+              onMouseLeave={onHover}
+              primary="true"
+              dark="true"
+              onClick={handleClick}
+            >
+              More Available Puppies
+            </Button>
+          </Link>
         </PuppiesBtnWrapper>
       </PuppiesContainer>
     </>
