@@ -40,8 +40,9 @@ export const PuppiesWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    /* padding: 0 50px; */
     max-width: 300px;
+    /* display: flex;
+    flex-direction: column; */
   }
   /* @media screen and (max-width: 375px) {
     width: 200px;
@@ -74,7 +75,7 @@ export const PuppiesCard = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    /* width: 100px; */
+    /* width: 300px; */
   }
   /* @media screen and (max-width: 375px) {
     width: 200px;

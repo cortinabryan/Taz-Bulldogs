@@ -39,37 +39,37 @@ const Puppies = () => {
         <PuppiesWrapper>
           <PuppiesCard>
             <PuppiesIcon src={Icon1}></PuppiesIcon>
-            <PuppiesH2> Nena</PuppiesH2>
+            <PuppiesH2>Nena</PuppiesH2>
             <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 8 weeks</PuppiesP>
           </PuppiesCard>
           <PuppiesCard>
             <PuppiesIcon src={Icon2}></PuppiesIcon>
-            <PuppiesH2> Molly</PuppiesH2>
+            <PuppiesH2>Molly</PuppiesH2>
             <PuppiesP>Gender: Male</PuppiesP>
             <PuppiesP>Age: 10 weeks</PuppiesP>
           </PuppiesCard>
           <PuppiesCard>
             <PuppiesIcon src={Icon3}></PuppiesIcon>
-            <PuppiesH2> Turbo</PuppiesH2>
+            <PuppiesH2>Turbo</PuppiesH2>
             <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 7 weeks</PuppiesP>
           </PuppiesCard>
           <PuppiesCard>
             <PuppiesIcon src={Icon4}></PuppiesIcon>
-            <PuppiesH2> Thunder</PuppiesH2>
+            <PuppiesH2>Thunder</PuppiesH2>
             <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 5 weeks</PuppiesP>
           </PuppiesCard>
           <PuppiesCard>
             <PuppiesIcon src={Icon5}></PuppiesIcon>
-            <PuppiesH2> Chapo</PuppiesH2>
+            <PuppiesH2>Chapo</PuppiesH2>
             <PuppiesP>Gender: Male</PuppiesP>
             <PuppiesP>Age: 6 weeks</PuppiesP>
           </PuppiesCard>
           <PuppiesCard>
             <PuppiesIcon src={Icon6}></PuppiesIcon>
-            <PuppiesH2> Duke</PuppiesH2>
+            <PuppiesH2>Duke</PuppiesH2>
             <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 7 weeks</PuppiesP>
           </PuppiesCard>
@@ -80,21 +80,6 @@ const Puppies = () => {
             <PuppiesP>Age: 7 weeks</PuppiesP>
           </PuppiesCard>
         </PuppiesWrapper>
-        <PuppiesBtnWrapper>
-          <Link to="available-puppies" className="button-link">
-            <Button
-              to="/"
-              onMouseEnter={onHover}
-              onMouseLeave={onHover}
-              primary="true"
-              dark="true"
-              onClick={handleClick}
-              className="puppy-button"
-            >
-              More Available Puppies
-            </Button>
-          </Link>
-        </PuppiesBtnWrapper>
       </PuppiesContainer>
     </>
   );

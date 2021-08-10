@@ -1,18 +1,21 @@
-import React from "react";
-import Navbar from "../components/Navbar";
+import React, { useState } from "react";
+import Navbar from "../components/Navbar2";
+import Sidebar from "../components/Sidebar";
 // import Navbar from './Old stuff/Navbar';
+import Puppies from "./../components/Puppies2";
+import "../App.css";
 
 const AvailablePuppies = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <div id="available-puppies">
+    <>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar />
-      <p>yooo</p>
-      <p>yooo</p>
-      <h1>YOO THIS IS THE PUPPIES PAGEEE!</h1>
-      <p>yooo</p>
-      <p>yooo</p>
-      <p>yooo</p>
-    </div>
+      <Puppies />
+    </>
   );
 };
 
