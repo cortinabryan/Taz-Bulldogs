@@ -13,6 +13,7 @@ export const ContactContainer = styled.div`
 
 export const ContactWrapper = styled.div`
   margin: 20px;
+  width: 100%;
   display: grid;
   grid-template-rows: 1fr 2fr;
 
@@ -122,6 +123,8 @@ export const ContactH3 = styled.h3`
 
 export const ContactP = styled.p`
   /* margin: 20px 0; */
+  /* width: 60rem; */
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,7 +150,7 @@ export const ContactLabel = styled.label`
 
 export const ContactInput = styled.input`
   color: #fff;
-  width: 90%;
+  max-width: 100%;
   padding: 1em;
   margin-bottom: 2em;
   background-color: rgb(8, 10, 22);
@@ -172,7 +175,8 @@ export const ContactForm = styled.form`
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   column-gap: 60px;
-  padding: 2em;
+  padding: 2em 0;
+  /* margin-left: 2em; */
 
   .full {
     grid-column: 1 / 3;
@@ -189,8 +193,9 @@ export const ContactForm = styled.form`
 `;
 
 export const ContactButton = styled.button`
-  /* width: 100%; */
-  width: 100rem;
+  max-width: 100%;
+  /* width: 96.8%; */
+  /* width: 100rem; */
   padding: 1em;
   margin: 2rem 0;
   background: linear-gradient(to bottom right, #870000, #190a05);
@@ -226,19 +231,21 @@ export const ContactButton = styled.button`
 
     color: #fff;
     transition: background-color 2s ease-out;
+
+    // ADD Media queries indivindually for button 1000px,768px,
+
+    @media screen and (max-width: 1000px) {
+    }
+
+    @media screen and (max-width: 700px) {
+    }
+    @media screen and (max-width: 375px) {
+    }
   }
 `;
 
 export const ContactText = styled.textarea`
-  /* margin: 2.5rem 2rem 0 2rem; */
-  /* padding: 1rem 2rem 2rem 1rem; */
-
-  /* min-width: 61.5rem; */
-  /* max-width: 65rem; */
-  /* width: 61.5rem; */
-  /* min-height: 300px; */
-  /* font-size: 20px; */
-  width: 95%;
+  max-width: 100%;
   padding: 1em;
   min-height: 300px;
   background-color: rgb(8, 10, 22);
@@ -246,13 +253,10 @@ export const ContactText = styled.textarea`
   color: #fff;
 
   @media screen and (max-width: 1000px) {
-    /* max-width: 52rem; */
   }
 
   @media screen and (max-width: 700px) {
-    max-width: 90%;
   }
   @media screen and (max-width: 375px) {
-    /* max-width: 20rem; */
   } ;
 `;
