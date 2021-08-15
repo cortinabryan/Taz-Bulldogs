@@ -28,6 +28,7 @@ const Footer = () => {
           <FooterLinksContainer>
             <FooterImage>
               <img src={img1} alt="" className="kennel1" />
+
               <FooterP>Registration Papers Included</FooterP>
               <FooterP>30 Day Pet Insurance Coverage</FooterP>
             </FooterImage>

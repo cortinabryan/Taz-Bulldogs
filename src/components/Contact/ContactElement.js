@@ -6,6 +6,9 @@ export const ContactContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 `;
 
 export const ContactWrapper = styled.div`
@@ -19,6 +22,7 @@ export const ContactWrapper = styled.div`
   }
 
   @media screen and (min-width: 375px) {
+    /* height: 90rem; */
   }
 `;
 
@@ -38,6 +42,45 @@ export const ContactInfo = styled.div`
   /* background: linear-gradient(to bottom right, #870000, #190a05); */
 `;
 
+export const ContactImage = styled.div`
+  /* background: blue; */
+  background-size: contain;
+  color: #fff;
+  justify-self: start;
+  cursor: default;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  font-weight: bold;
+  height: 100%;
+  background-repeat: no-repeat;
+  flex: 1;
+
+  img {
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 375px) {
+      max-width: 15rem;
+      max-height: 15rem;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    max-width: 52rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 38rem;
+  }
+  @media screen and (max-width: 375px) {
+    /* max-width: 20rem; */
+    max-height: 15rem;
+  }
+`;
+
 export const ContactList = styled.ul`
   list-style: none;
   padding: 0;
@@ -47,13 +90,19 @@ export const ContactList = styled.ul`
   @media screen and (min-width: 700px) {
     text-align: left;
   }
+
+  @media screen and (max-width: 375px) {
+    /* margin: 0; */
+  }
 `;
 
 export const ContactListItem = styled.li`
   font-size: 1.5rem;
 `;
 
-export const ContactBottomWrapper = styled.div``;
+export const ContactBottomWrapper = styled.div`
+  /* display: flex; */
+`;
 
 export const ContactH1 = styled.h1`
   font-size: 5em;
@@ -72,7 +121,11 @@ export const ContactH3 = styled.h3`
 `;
 
 export const ContactP = styled.p`
-  margin: 0;
+  /* margin: 20px 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 `;
 
 export const ContactRow = styled.div`
@@ -136,8 +189,10 @@ export const ContactForm = styled.form`
 `;
 
 export const ContactButton = styled.button`
-  width: 100%;
+  /* width: 100%; */
+  width: 100rem;
   padding: 1em;
+  margin: 2rem 0;
   background: linear-gradient(to bottom right, #870000, #190a05);
   color: #f9f9f9;
   /* background: #c9e6ff; */

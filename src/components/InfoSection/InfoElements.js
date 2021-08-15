@@ -25,6 +25,10 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 600px) {
+    height: 900px;
+  }
+
+  @media screen and (max-width: 375px) {
     height: 700px;
   }
 `;
@@ -64,7 +68,7 @@ export const Column2 = styled.div`
   grid-area: col2;
 
   @media screen and (max-width: 480px) {
-    margin: 40px 0 40px 40px;
+    margin: 40px 40px 40px 40px;
     /* margin: 20px; */
   }
 `;

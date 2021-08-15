@@ -21,7 +21,9 @@ import {
   ContactForm,
   ContactText,
   ContactBtnWrapper,
+  ContactImage,
 } from "./ContactElement";
+import img1 from "../../images/taz-supreme.png";
 import { Button } from "../ButtonElements";
 
 const Contact = () => {
@@ -36,7 +38,10 @@ const Contact = () => {
       <ContactContainer>
         <ContactWrapper>
           <ContactInfo>
-            <ContactH1>Taz Bulldogs</ContactH1>
+            <ContactImage>
+              {/* <ContactH1>Taz Bulldogs</ContactH1> */}
+              <img src={img1} alt="" className="kennel1" />
+            </ContactImage>
             <ContactList>
               <ContactListItem>
                 <ContactI className="fa fa-phone"></ContactI>(702) 555-5555
