@@ -155,6 +155,14 @@ export const ContactInput = styled.input`
   margin-bottom: 2em;
   background-color: rgb(8, 10, 22);
   border-radius: 5px;
+  @media screen and (max-width: 1000px) {
+  }
+
+  @media screen and (max-width: 700px) {
+  }
+  @media screen and (max-width: 375px) {
+    max-width: 90%;
+  }
 `;
 
 export const ContactMsg = styled.div`
@@ -258,5 +266,6 @@ export const ContactText = styled.textarea`
   @media screen and (max-width: 700px) {
   }
   @media screen and (max-width: 375px) {
+    max-width: 90%;
   } ;
 `;
