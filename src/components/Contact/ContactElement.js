@@ -9,6 +9,17 @@ export const ContactContainer = styled.div`
   display: flex;
   justify-content: center;
   align-content: center;
+
+  @media screen and (max-width: 1000px) {
+  }
+
+  @media screen and (max-width: 768px) {
+    max-height: 105rem;
+  }
+  @media screen and (max-width: 375px) {
+    max-height: 110rem;
+    /* max-height: 100px; */
+  }
 `;
 
 export const ContactWrapper = styled.div`
@@ -17,7 +28,7 @@ export const ContactWrapper = styled.div`
   display: grid;
   grid-template-rows: 1fr 2fr;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 768px) {
     /* display: grid;
     grid-template-columns: 1fr 2fr; */
   }
@@ -41,6 +52,27 @@ export const ContactInfo = styled.div`
   align-items: center;
   /* background: #bf0303; Old browsers */
   /* background: linear-gradient(to bottom right, #870000, #190a05); */
+
+  img {
+    @media screen and (max-width: 1000px) {
+    }
+
+    @media screen and (max-width: 700px) {
+    }
+    @media screen and (max-width: 375px) {
+      max-height: 15rem;
+      max-width: 15rem;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+  }
+
+  @media screen and (max-width: 700px) {
+  }
+  @media screen and (max-width: 375px) {
+    /* max-height: 100px; */
+  }
 `;
 
 export const ContactImage = styled.div`
@@ -61,7 +93,15 @@ export const ContactImage = styled.div`
   flex: 1;
 
   img {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+
+    @media screen and (max-width: 1000px) {
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 15rem;
+      max-height: 15rem;
+    }
 
     @media screen and (max-width: 375px) {
       max-width: 15rem;
@@ -89,7 +129,7 @@ export const ContactList = styled.ul`
   margin: 0 0 1rem 0;
 
   @media screen and (min-width: 700px) {
-    text-align: left;
+    /* text-align: left; */
   }
 
   @media screen and (max-width: 375px) {
@@ -161,7 +201,7 @@ export const ContactInput = styled.input`
   @media screen and (max-width: 700px) {
   }
   @media screen and (max-width: 375px) {
-    max-width: 90%;
+    /* max-width: 90%; */
   }
 `;
 
@@ -266,6 +306,6 @@ export const ContactText = styled.textarea`
   @media screen and (max-width: 700px) {
   }
   @media screen and (max-width: 375px) {
-    max-width: 90%;
+    /* max-width: 90%; */
   } ;
 `;

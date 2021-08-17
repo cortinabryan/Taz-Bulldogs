@@ -38,10 +38,10 @@ const Contact = () => {
       <ContactContainer>
         <ContactWrapper>
           <ContactInfo>
-            <ContactImage>
-              {/* <ContactH1>Taz Bulldogs</ContactH1> */}
-              <img src={img1} alt="" className="kennel1" />
-            </ContactImage>
+            {/* <ContactImage> */}
+            {/* <ContactH1>Taz Bulldogs</ContactH1> */}
+            <img src={img1} alt="" className="kennel1" />
+            {/* </ContactImage> */}
             <ContactList>
               <ContactListItem>
                 <ContactI className="fa fa-phone"></ContactI>(702) 555-5555
