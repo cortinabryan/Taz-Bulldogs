@@ -14,7 +14,7 @@ export const ContactContainer = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    max-height: 105rem;
+    max-height: 123rem;
   }
   @media screen and (max-width: 375px) {
     max-height: 110rem;
@@ -230,7 +230,7 @@ export const ContactForm = styled.form`
     grid-column: 1 / 3;
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 768px) {
     padding: 1em;
     column-gap: 20px;
     display: flex;
