@@ -14,10 +14,16 @@ export const ContactContainer = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    max-height: 123rem;
+    /* max-height: 123rem; */
   }
-  @media screen and (max-width: 375px) {
+
+  @media screen and (max-width: 500px) {
     max-height: 110rem;
+    /* max-height: 100px; */
+  }
+
+  @media screen and (max-width: 375px) {
+    max-height: 112rem;
     /* max-height: 100px; */
   }
 `;
@@ -29,11 +35,17 @@ export const ContactWrapper = styled.div`
   grid-template-rows: 1fr 2fr;
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-height: 123rem;
     /* display: grid;
     grid-template-columns: 1fr 2fr; */
   }
 
   @media screen and (min-width: 375px) {
+    /* max-height: 110rem; */
     /* height: 90rem; */
   }
 `;
@@ -58,6 +70,10 @@ export const ContactInfo = styled.div`
     }
 
     @media screen and (max-width: 700px) {
+    }
+    @media screen and (max-width: 500px) {
+      max-height: 15rem;
+      max-width: 15rem;
     }
     @media screen and (max-width: 375px) {
       max-height: 15rem;
