@@ -29,8 +29,9 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactWrapper = styled.div`
-  margin: 20px;
-  width: 100%;
+  /* margin: 20px; */
+  /* width: 100%; */
+  width: 80%;
   display: grid;
   grid-template-rows: 1fr 2fr;
 
@@ -42,6 +43,7 @@ export const ContactWrapper = styled.div`
     max-height: 123rem;
     /* display: grid;
     grid-template-columns: 1fr 2fr; */
+    /* padding: 0; */
   }
 
   @media screen and (min-width: 375px) {
@@ -59,8 +61,8 @@ export const ContactInfo = styled.div`
   /* background: rgb(98, 2, 0); */
   /* padding: 20px; */
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   /* background: #bf0303; Old browsers */
   /* background: linear-gradient(to bottom right, #870000, #190a05); */
@@ -158,6 +160,12 @@ export const ContactListItem = styled.li`
 `;
 
 export const ContactBottomWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  /* max-width: 100rem; */
   /* display: flex; */
 `;
 
@@ -172,9 +180,9 @@ export const ContactH1 = styled.h1`
 export const ContactH3 = styled.h3`
   font-size: 3em;
   color: #fff;
-  margin-bottom: 64px;
+  /* margin-bottom: 64px; */
   text-align: center;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 `;
 
 export const ContactP = styled.p`
@@ -205,12 +213,16 @@ export const ContactLabel = styled.label`
 `;
 
 export const ContactInput = styled.input`
-  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  /* color: #fff; */
   max-width: 100%;
   padding: 1em;
-  margin-bottom: 2em;
-  background-color: rgb(8, 10, 22);
-  border-radius: 5px;
+  /* margin-bottom: 2em; */
+  /* background-color: rgb(8, 10, 22); */
+  font-weight: 900;
+  background-color: #fafafa;
+  /* border-radius: 5px; */
   @media screen and (max-width: 1000px) {
   }
 
@@ -227,7 +239,6 @@ export const ContactMsg = styled.div`
 `;
 
 export const ContactBtnWrapper = styled.div`
-  margin-top: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -309,12 +320,16 @@ export const ContactButton = styled.button`
 `;
 
 export const ContactText = styled.textarea`
+  font-family: "Poppins", sans-serif;
   max-width: 100%;
   padding: 1em;
   min-height: 300px;
-  background-color: rgb(8, 10, 22);
+  font-size: 18px;
+  /* background-color: rgb(8, 10, 22); */
+  background-color: #fafafa;
   border-radius: 5px;
-  color: #fff;
+  font-weight: 900;
+  /* color: red; */
 
   @media screen and (max-width: 1000px) {
   }
