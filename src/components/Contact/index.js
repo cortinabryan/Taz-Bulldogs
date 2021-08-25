@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+// import axios from "axios";
+
 import {
   ContactContainer,
   ContactInfoWrapper,
@@ -33,14 +35,48 @@ const Contact = () => {
     setHover(!hover);
   };
 
+  // const state = {
+  //   name: "",
+  //   lastname: "",
+  //   email: "",
+  //   message: "",
+  //   sent: false,
+  // };
+
+  // Handle inputs
+
+  // const handleName = (e) => {
+  //   this.setState({
+  //     name: e.target.name,
+  //   });
+  // };
+
+  // const handleLastName = (e) => {
+  //   this.setState({
+  //     lastname: e.target.lastname,
+  //   });
+  // };
+
+  // const handleEmail = (e) => {
+  //   this.setState({
+  //     email: e.target.email,
+  //   });
+  // };
+
+  // const handleMessage = (e) => {
+  //   this.setState({
+  //     message: e.target.message,
+  //   });
+  // };
+
   return (
     <div>
       <ContactContainer>
         <ContactWrapper>
           <ContactInfo>
             {/* <ContactImage> */}
-            {/* <ContactH1>Taz Bulldogs</ContactH1> */}
-            <img src={img1} alt="" className="kennel1" />
+            <ContactH1>Taz Bulldogs</ContactH1>
+            {/* <img src={img1} alt="" className="kennel1" /> */}
             {/* </ContactImage> */}
             <ContactList>
               <ContactListItem>

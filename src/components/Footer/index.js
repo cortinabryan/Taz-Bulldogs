@@ -39,7 +39,7 @@ const Footer = () => {
                 <img src={logo} alt="" className="logo" />
               </SocialLogo>
               <WebsiteRights>
-                Taz's Bulldog {new Date().getFullYear()} All rights reserved.
+                Taz's Bulldog 2017 All rights reserved.
               </WebsiteRights>
               <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                 <FaFacebook />
