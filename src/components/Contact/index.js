@@ -35,39 +35,39 @@ const Contact = () => {
     setHover(!hover);
   };
 
-  // const state = {
-  //   name: "",
-  //   lastname: "",
-  //   email: "",
-  //   message: "",
-  //   sent: false,
-  // };
+  const state = {
+    name: "",
+    lastname: "",
+    email: "",
+    message: "",
+    sent: false,
+  };
 
   // Handle inputs
 
-  // const handleName = (e) => {
-  //   this.setState({
-  //     name: e.target.name,
-  //   });
-  // };
+  const handleName = (e) => {
+    this.setState({
+      name: e.target.value,
+    });
+  };
 
-  // const handleLastName = (e) => {
-  //   this.setState({
-  //     lastname: e.target.lastname,
-  //   });
-  // };
+  const handleLastName = (e) => {
+    this.setState({
+      lastname: e.target.value,
+    });
+  };
 
-  // const handleEmail = (e) => {
-  //   this.setState({
-  //     email: e.target.email,
-  //   });
-  // };
+  const handleEmail = (e) => {
+    this.setState({
+      email: e.target.value,
+    });
+  };
 
-  // const handleMessage = (e) => {
-  //   this.setState({
-  //     message: e.target.message,
-  //   });
-  // };
+  const handleMessage = (e) => {
+    this.setState({
+      message: e.target.value,
+    });
+  };
 
   return (
     <div>
@@ -90,7 +90,12 @@ const Contact = () => {
             <ContactForm>
               <ContactP>
                 <ContactLabel>Name</ContactLabel>
-                <ContactInput placeholder="Full Name" />
+                <ContactInput
+                  placeholder="Full Name"
+                  name="name"
+                  // value={this.state.name}
+                  // onChange={this.handleName}
+                />
               </ContactP>
               <ContactP>
                 <ContactLabel>Email</ContactLabel>

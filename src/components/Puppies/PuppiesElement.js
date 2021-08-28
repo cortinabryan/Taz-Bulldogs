@@ -10,10 +10,10 @@ export const PuppiesContainer = styled.div`
   /* background: rgb(181, 189, 200); Old browsers */
   background: #707070;
   @media screen and (max-width: 1000px) {
-    height: 2200px;
+    height: 1500px;
   }
   @media screen and (max-width: 768px) {
-    height: 3600px;
+    height: 1800px;
   }
 
   @media screen and (max-width: 480px) {

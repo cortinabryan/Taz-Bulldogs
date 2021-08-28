@@ -43,18 +43,18 @@ const Puppies = () => {
             <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 8 weeks</PuppiesP>
           </PuppiesCard>
-          <PuppiesCard>
+          {/* <PuppiesCard>
             <PuppiesIcon src={Icon2}></PuppiesIcon>
             <PuppiesH2> Molly</PuppiesH2>
             <PuppiesP>Gender: Male</PuppiesP>
             <PuppiesP>Age: 10 weeks</PuppiesP>
-          </PuppiesCard>
-          <PuppiesCard>
+          </PuppiesCard> */}
+          {/* <PuppiesCard>
             <PuppiesIcon src={Icon3}></PuppiesIcon>
             <PuppiesH2> Turbo</PuppiesH2>
             <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 7 weeks</PuppiesP>
-          </PuppiesCard>
+          </PuppiesCard> */}
           <PuppiesCard>
             <PuppiesIcon src={Icon4}></PuppiesIcon>
             <PuppiesH2> Thunder</PuppiesH2>
@@ -67,18 +67,18 @@ const Puppies = () => {
             <PuppiesP>Gender: Male</PuppiesP>
             <PuppiesP>Age: 6 weeks</PuppiesP>
           </PuppiesCard>
-          <PuppiesCard>
+          <PuppiesCard className="puppy-7">
             <PuppiesIcon src={Icon6}></PuppiesIcon>
             <PuppiesH2> Duke</PuppiesH2>
             <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 7 weeks</PuppiesP>
           </PuppiesCard>
-          <PuppiesCard className="puppy-7">
+          {/* <PuppiesCard className="puppy-7">
             <PuppiesIcon src={Icon7}></PuppiesIcon>
             <PuppiesH2>Sky</PuppiesH2>
             <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 7 weeks</PuppiesP>
-          </PuppiesCard>
+          </PuppiesCard> */}
         </PuppiesWrapper>
         <PuppiesBtnWrapper>
           <Link to="available-puppies" className="button-link">
