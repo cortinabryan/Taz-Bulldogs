@@ -13,7 +13,7 @@ export const PuppiesContainer = styled.div`
     height: 1500px;
   }
   @media screen and (max-width: 768px) {
-    height: 1800px;
+    height: 2200px;
   }
 
   @media screen and (max-width: 480px) {

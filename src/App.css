@@ -73,6 +73,13 @@ body {
   } */
 }
 
+@media screen and (min-width: 768px) {
+  .puppy-7 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .kennel {
     max-width: 20rem;
@@ -83,10 +90,10 @@ body {
   text-decoration: none;
 }
 
-.puppy-7 {
+/* .puppy-7 {
   grid-column-start: 2;
   grid-column-end: 3;
-}
+} */
 
 /* @media screen and (max-width: 1000px) {
   .puppy-7 {

@@ -41,7 +41,7 @@ const Puppies = () => {
             <PuppiesIcon src={Icon1}></PuppiesIcon>
             <PuppiesH2> Nena</PuppiesH2>
             <PuppiesP>Gender: Female</PuppiesP>
-            <PuppiesP>Age: 8 weeks</PuppiesP>
+            <PuppiesP>Age: 9 weeks</PuppiesP>
           </PuppiesCard>
           {/* <PuppiesCard>
             <PuppiesIcon src={Icon2}></PuppiesIcon>
@@ -58,20 +58,20 @@ const Puppies = () => {
           <PuppiesCard>
             <PuppiesIcon src={Icon4}></PuppiesIcon>
             <PuppiesH2> Thunder</PuppiesH2>
-            <PuppiesP>Gender: Female</PuppiesP>
-            <PuppiesP>Age: 5 weeks</PuppiesP>
+            <PuppiesP>Gender: Male</PuppiesP>
+            <PuppiesP>Age: 9 weeks</PuppiesP>
           </PuppiesCard>
           <PuppiesCard>
             <PuppiesIcon src={Icon5}></PuppiesIcon>
             <PuppiesH2> Chapo</PuppiesH2>
             <PuppiesP>Gender: Male</PuppiesP>
-            <PuppiesP>Age: 6 weeks</PuppiesP>
+            <PuppiesP>Age: 9 weeks</PuppiesP>
           </PuppiesCard>
           <PuppiesCard className="puppy-7">
             <PuppiesIcon src={Icon6}></PuppiesIcon>
             <PuppiesH2> Duke</PuppiesH2>
-            <PuppiesP>Gender: Female</PuppiesP>
-            <PuppiesP>Age: 7 weeks</PuppiesP>
+            <PuppiesP>Gender: Male</PuppiesP>
+            <PuppiesP>Age: 9 weeks</PuppiesP>
           </PuppiesCard>
           {/* <PuppiesCard className="puppy-7">
             <PuppiesIcon src={Icon7}></PuppiesIcon>
@@ -91,7 +91,7 @@ const Puppies = () => {
               onClick={handleClick}
               className="puppy-button"
             >
-              More Available Puppies
+              Previous Available Puppies
             </Button>
           </Link>
         </PuppiesBtnWrapper>
