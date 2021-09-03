@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-// import axios from "axios";
+import axios from "axios";
 
 import {
   ContactContainer,
@@ -27,6 +27,7 @@ import {
 } from "./ContactElement";
 import img1 from "../../images/taz-supreme.png";
 import { Button } from "../ButtonElements";
+import { ThemeConsumer } from "styled-components";
 
 const Contact = () => {
   const [hover, setHover] = useState(false);
@@ -35,38 +36,28 @@ const Contact = () => {
     setHover(!hover);
   };
 
-  const state = {
-    name: "",
-    lastname: "",
-    email: "",
-    message: "",
-    sent: false,
-  };
-
-  // Handle inputs
-
-  const handleName = (e) => {
-    this.setState({
-      name: e.target.value,
+  const [status, setStatus] = useState("Submit");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    const { name, email, phone, subject, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      phone: phone.value,
+      subject: subject.value,
+      message: message.value,
+    };
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
     });
-  };
-
-  const handleLastName = (e) => {
-    this.setState({
-      lastname: e.target.value,
-    });
-  };
-
-  const handleEmail = (e) => {
-    this.setState({
-      email: e.target.value,
-    });
-  };
-
-  const handleMessage = (e) => {
-    this.setState({
-      message: e.target.value,
-    });
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
   };
 
   return (
@@ -74,10 +65,7 @@ const Contact = () => {
       <ContactContainer>
         <ContactWrapper>
           <ContactInfo>
-            {/* <ContactImage> */}
             <ContactH1>Taz Bulldogs</ContactH1>
-            {/* <img src={img1} alt="" className="kennel1" /> */}
-            {/* </ContactImage> */}
             <ContactList>
               <ContactListItem>
                 <ContactI className="fa fa-phone"></ContactI>(702) 555-5555
@@ -87,37 +75,35 @@ const Contact = () => {
           </ContactInfo>
           <ContactBottomWrapper id="contact">
             <ContactH3>Contact Us</ContactH3>
-            <ContactForm>
+            <ContactForm onSubmit={handleSubmit}>
               <ContactP>
-                <ContactLabel>Name</ContactLabel>
+                <ContactLabel htmlFor="name">Name</ContactLabel>
+                <ContactInput placeholder="Full Name" id="name" required />
+              </ContactP>
+              <ContactP>
+                <ContactLabel htmlFor="email">Email</ContactLabel>
+                <ContactInput placeholder="Email Address" id="email" required />
+              </ContactP>
+              <ContactP>
+                <ContactLabel htmlFor="phone">Phone</ContactLabel>
+                <ContactInput placeholder="Phone Number" id="phone" required />
+              </ContactP>
+              <ContactP>
+                <ContactLabel htmlFor="subject">Subject</ContactLabel>
                 <ContactInput
-                  placeholder="Full Name"
-                  name="name"
-                  // value={this.state.name}
-                  // onChange={this.handleName}
-                />
-              </ContactP>
-              <ContactP>
-                <ContactLabel>Email</ContactLabel>
-                <ContactInput placeholder="Email Address" />
-              </ContactP>
-
-              <ContactP>
-                <ContactLabel>Phone</ContactLabel>
-                <ContactInput placeholder="Phone Number" />
-              </ContactP>
-              <ContactP>
-                <ContactLabel>Subject</ContactLabel>
-                <ContactInput placeholder="Subject"></ContactInput>
+                  placeholder="Subject"
+                  id="subject"
+                  required
+                ></ContactInput>
               </ContactP>
 
               <ContactP className="full">
-                <ContactLabel>Message</ContactLabel>
-                <ContactText placeholder="Message" />
+                <ContactLabel htmlFor="message">Message</ContactLabel>
+                <ContactText placeholder="Message" id="message" requried />
               </ContactP>
 
               <ContactP className="full">
-                <ContactButton>Send Message</ContactButton>
+                <ContactButton type="submit">{status}</ContactButton>
               </ContactP>
             </ContactForm>
           </ContactBottomWrapper>

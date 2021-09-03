@@ -41,10 +41,18 @@ const Footer = () => {
               <WebsiteRights>
                 Taz's Bulldog 2017 All rights reserved.
               </WebsiteRights>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <SocialIconLink
+                href="https://www.facebook.com/profile.php?id=100069967895767"
+                target="_blank"
+                aria-label="Facebook"
+              >
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+              <SocialIconLink
+                href="https://www.instagram.com/wilwc31/?utm_medium=copy_link&fbclid=IwAR3OSEAg1lqMt1c_uGVehGXeARIq6Rw-MDuzUe9vBqzjAbfGIksSjaiJV9I"
+                target="_blank"
+                aria-label="Instagram"
+              >
                 <FaInstagram />
               </SocialIconLink>
             </SocialMediaWrapper>

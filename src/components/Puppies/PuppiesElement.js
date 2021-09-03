@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PuppiesContainer = styled.div`
-  height: 1900px;
+  height: 1200px;
 
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@ export const PuppiesContainer = styled.div`
 `;
 
 export const PuppiesWrapper = styled.div`
-  width: 1400px;
+  /* width: 1400px; */
   max-width: 100%;
   width: 1200px;
   margin: 0 auto;
