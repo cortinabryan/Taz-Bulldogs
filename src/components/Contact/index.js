@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import axios from "axios";
+import emailjs from "emailjs-com";
 
 import {
   ContactContainer,
@@ -36,28 +36,21 @@ const Contact = () => {
     setHover(!hover);
   };
 
-  const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    setStatus("Sending...");
-    const { name, email, phone, subject, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      phone: phone.value,
-      subject: subject.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
+
+    emailjs
+      .sendForm(
+        "service_f5zbdaf",
+        "template_de5vb6m",
+        e.target,
+        "user_JSl8NaTwMIT5ctgAiz5Ul"
+      )
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
+    e.target.reset();
   };
 
   return (
@@ -75,23 +68,39 @@ const Contact = () => {
           </ContactInfo>
           <ContactBottomWrapper id="contact">
             <ContactH3>Contact Us</ContactH3>
-            <ContactForm onSubmit={handleSubmit}>
+            <ContactForm onSubmit={sendEmail}>
               <ContactP>
                 <ContactLabel htmlFor="name">Name</ContactLabel>
-                <ContactInput placeholder="Full Name" id="name" required />
+                <ContactInput
+                  placeholder="Full Name"
+                  name="name"
+                  id="name"
+                  required
+                />
               </ContactP>
               <ContactP>
                 <ContactLabel htmlFor="email">Email</ContactLabel>
-                <ContactInput placeholder="Email Address" id="email" required />
+                <ContactInput
+                  placeholder="Email Address"
+                  name="email"
+                  id="email"
+                  required
+                />
               </ContactP>
               <ContactP>
                 <ContactLabel htmlFor="phone">Phone</ContactLabel>
-                <ContactInput placeholder="Phone Number" id="phone" required />
+                <ContactInput
+                  placeholder="Phone Number"
+                  name="phone"
+                  id="phone"
+                  required
+                />
               </ContactP>
               <ContactP>
                 <ContactLabel htmlFor="subject">Subject</ContactLabel>
                 <ContactInput
                   placeholder="Subject"
+                  name="subject"
                   id="subject"
                   required
                 ></ContactInput>
@@ -99,11 +108,18 @@ const Contact = () => {
 
               <ContactP className="full">
                 <ContactLabel htmlFor="message">Message</ContactLabel>
-                <ContactText placeholder="Message" id="message" requried />
+                <ContactText
+                  placeholder="Message"
+                  name="message"
+                  id="message"
+                  requried
+                />
               </ContactP>
 
               <ContactP className="full">
-                <ContactButton type="submit">{status}</ContactButton>
+                <ContactButton type="submit" value="Send">
+                  Submit
+                </ContactButton>
               </ContactP>
             </ContactForm>
           </ContactBottomWrapper>
