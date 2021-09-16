@@ -4,8 +4,8 @@ import Icon1 from "../../images/nena.jpg";
 import Icon2 from "../../images/molly.jpg";
 import Icon3 from "../../images/turbo.jpg";
 import Icon4 from "../../images/thunder.jpg";
-import Icon5 from "../../images/chapo.jpg";
-import Icon6 from "../../images/duke.jpg";
+import Icon5 from "../../images/chapo2.jpg";
+import Icon6 from "../../images/sky2.png";
 import Icon7 from "../../images/sky.jpg";
 import { Button } from "../ButtonElements";
 import {
@@ -37,12 +37,12 @@ const Puppies = () => {
       <PuppiesContainer id="puppies">
         <PuppiesH1>Puppies</PuppiesH1>
         <PuppiesWrapper>
-          <PuppiesCard>
+          {/* <PuppiesCard>
             <PuppiesIcon src={Icon1}></PuppiesIcon>
             <PuppiesH2> Nena</PuppiesH2>
             <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 9 weeks</PuppiesP>
-          </PuppiesCard>
+          </PuppiesCard> */}
           {/* <PuppiesCard>
             <PuppiesIcon src={Icon2}></PuppiesIcon>
             <PuppiesH2> Molly</PuppiesH2>
@@ -55,12 +55,12 @@ const Puppies = () => {
             <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 7 weeks</PuppiesP>
           </PuppiesCard> */}
-          <PuppiesCard>
+          {/* <PuppiesCard>
             <PuppiesIcon src={Icon4}></PuppiesIcon>
             <PuppiesH2> Thunder</PuppiesH2>
             <PuppiesP>Gender: Male</PuppiesP>
             <PuppiesP>Age: 9 weeks</PuppiesP>
-          </PuppiesCard>
+          </PuppiesCard> */}
           <PuppiesCard>
             <PuppiesIcon src={Icon5}></PuppiesIcon>
             <PuppiesH2> Chapo</PuppiesH2>
@@ -69,8 +69,8 @@ const Puppies = () => {
           </PuppiesCard>
           <PuppiesCard className="puppy-7">
             <PuppiesIcon src={Icon6}></PuppiesIcon>
-            <PuppiesH2> Duke</PuppiesH2>
-            <PuppiesP>Gender: Male</PuppiesP>
+            <PuppiesH2> Sky</PuppiesH2>
+            <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 9 weeks</PuppiesP>
           </PuppiesCard>
           {/* <PuppiesCard className="puppy-7">

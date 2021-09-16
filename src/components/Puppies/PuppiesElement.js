@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PuppiesContainer = styled.div`
-  height: 1200px;
+  height: 1000px;
 
   display: flex;
   flex-direction: column;
@@ -10,10 +10,10 @@ export const PuppiesContainer = styled.div`
   /* background: rgb(181, 189, 200); Old browsers */
   background: #707070;
   @media screen and (max-width: 1000px) {
-    height: 1500px;
+    height: 900px;
   }
   @media screen and (max-width: 768px) {
-    height: 2200px;
+    height: 1250px;
   }
 
   @media screen and (max-width: 480px) {
@@ -23,11 +23,11 @@ export const PuppiesContainer = styled.div`
 
 export const PuppiesWrapper = styled.div`
   /* width: 1400px; */
-  max-width: 100%;
-  width: 1200px;
+  /* max-width: 100%; */
+  width: 800px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   grid-gap: 75px;
   /* padding: 0 50px; */
@@ -113,7 +113,7 @@ export const PuppiesP = styled.p`
 `;
 
 export const PuppiesBtnWrapper = styled.div`
-  margin-top: 32px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
