@@ -4,9 +4,9 @@ import Icon1 from "../../images/nena.jpg";
 import Icon2 from "../../images/molly.jpg";
 import Icon3 from "../../images/turbo.jpg";
 import Icon4 from "../../images/thunder.jpg";
-import Icon5 from "../../images/chapo.jpg";
+import Icon5 from "../../images/chapo2.jpg";
 import Icon6 from "../../images/duke.jpg";
-import Icon7 from "../../images/sky.jpg";
+import Icon7 from "../../images/sky2.png";
 import { Button } from "../ButtonElements";
 import {
   PuppiesContainer,

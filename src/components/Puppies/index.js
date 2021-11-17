@@ -4,9 +4,9 @@ import Icon1 from "../../images/nena.jpg";
 import Icon2 from "../../images/molly.jpg";
 import Icon3 from "../../images/turbo.jpg";
 import Icon4 from "../../images/thunder.jpg";
-import Icon5 from "../../images/chapo.jpg";
+import Icon5 from "../../images/chapo2.jpg";
 import Icon6 from "../../images/duke.jpg";
-import Icon7 from "../../images/sky.jpg";
+import Icon7 from "../../images/sky2.png";
 import { Button } from "../ButtonElements";
 import {
   PuppiesContainer,
@@ -41,7 +41,7 @@ const Puppies = () => {
             <PuppiesIcon src={Icon1}></PuppiesIcon>
             <PuppiesH2> Nena</PuppiesH2>
             <PuppiesP>Gender: Female</PuppiesP>
-            <PuppiesP>Age: 8 weeks</PuppiesP>
+            <PuppiesP>Age: 9 weeks</PuppiesP>
           </PuppiesCard>
           <PuppiesCard>
             <PuppiesIcon src={Icon2}></PuppiesIcon>
@@ -58,18 +58,18 @@ const Puppies = () => {
           <PuppiesCard>
             <PuppiesIcon src={Icon4}></PuppiesIcon>
             <PuppiesH2> Thunder</PuppiesH2>
-            <PuppiesP>Gender: Female</PuppiesP>
-            <PuppiesP>Age: 5 weeks</PuppiesP>
+            <PuppiesP>Gender: Male</PuppiesP>
+            <PuppiesP>Age: 9 weeks</PuppiesP>
           </PuppiesCard>
           <PuppiesCard>
             <PuppiesIcon src={Icon5}></PuppiesIcon>
             <PuppiesH2> Chapo</PuppiesH2>
             <PuppiesP>Gender: Male</PuppiesP>
-            <PuppiesP>Age: 6 weeks</PuppiesP>
+            <PuppiesP>Age: 9 weeks</PuppiesP>
           </PuppiesCard>
           <PuppiesCard>
             <PuppiesIcon src={Icon6}></PuppiesIcon>
-            <PuppiesH2> Duke</PuppiesH2>
+            <PuppiesH2>Duke</PuppiesH2>
             <PuppiesP>Gender: Female</PuppiesP>
             <PuppiesP>Age: 7 weeks</PuppiesP>
           </PuppiesCard>
@@ -91,7 +91,7 @@ const Puppies = () => {
               onClick={handleClick}
               className="puppy-button"
             >
-              More Available Puppies
+              Previous Available Puppies
             </Button>
           </Link>
         </PuppiesBtnWrapper>

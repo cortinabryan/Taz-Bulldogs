@@ -66,6 +66,18 @@ body {
   .kennel {
     max-width: 25rem;
   }
+
+  /* .puppy-7 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  } */
+}
+
+@media screen and (min-width: 768px) {
+  .puppy-7 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -78,17 +90,17 @@ body {
   text-decoration: none;
 }
 
-.puppy-7 {
+/* .puppy-7 {
   grid-column-start: 2;
   grid-column-end: 3;
-}
+} */
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
   .puppy-7 {
     grid-column-start: 1;
     grid-column-end: 1;
   }
-}
+} */
 
 .puppy-button {
   /* background: green !important; */

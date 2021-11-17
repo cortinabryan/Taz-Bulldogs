@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import emailjs from "emailjs-com";
+
 import {
   ContactContainer,
   ContactInfoWrapper,
@@ -25,12 +27,30 @@ import {
 } from "./ContactElement";
 import img1 from "../../images/taz-supreme.png";
 import { Button } from "../ButtonElements";
+import { ThemeConsumer } from "styled-components";
 
 const Contact = () => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
     setHover(!hover);
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_b9rku7p",
+        "template_6qv8hhe",
+        e.target,
+        "user_aWRvmrd0dDcvamxpQVaUR"
+      )
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
+    e.target.reset();
   };
 
   return (
@@ -51,32 +71,58 @@ const Contact = () => {
           </ContactInfo>
           <ContactBottomWrapper id="contact">
             <ContactH3>Contact Us</ContactH3>
-            <ContactForm>
+            <ContactForm onSubmit={sendEmail}>
               <ContactP>
-                <ContactLabel>Name</ContactLabel>
-                <ContactInput placeholder="Full Name" />
+                <ContactLabel htmlFor="name">Name</ContactLabel>
+                <ContactInput
+                  placeholder="Full Name"
+                  name="name"
+                  id="name"
+                  required
+                />
               </ContactP>
               <ContactP>
-                <ContactLabel>Email</ContactLabel>
-                <ContactInput placeholder="Email Address" />
+                <ContactLabel htmlFor="email">Email</ContactLabel>
+                <ContactInput
+                  placeholder="Email Address"
+                  name="email"
+                  id="email"
+                  required
+                />
               </ContactP>
-
               <ContactP>
-                <ContactLabel>Phone</ContactLabel>
-                <ContactInput placeholder="Phone Number" />
+                <ContactLabel htmlFor="phone">Phone</ContactLabel>
+                <ContactInput
+                  placeholder="Phone Number"
+                  name="phone"
+                  id="phone"
+                  required
+                />
               </ContactP>
               <ContactP>
-                <ContactLabel>Subject</ContactLabel>
-                <ContactInput placeholder="Subject"></ContactInput>
+                <ContactLabel htmlFor="subject">Subject</ContactLabel>
+                <ContactInput
+                  placeholder="Subject"
+                  name="subject"
+                  id="subject"
+                  required
+                ></ContactInput>
               </ContactP>
 
               <ContactP className="full">
-                <ContactLabel>Message</ContactLabel>
-                <ContactText placeholder="Message" />
+                <ContactLabel htmlFor="message">Message</ContactLabel>
+                <ContactText
+                  placeholder="Message"
+                  name="message"
+                  id="message"
+                  requried
+                />
               </ContactP>
 
               <ContactP className="full">
-                <ContactButton>Send Message</ContactButton>
+                <ContactButton type="submit" value="Send">
+                  Submit
+                </ContactButton>
               </ContactP>
             </ContactForm>
           </ContactBottomWrapper>
